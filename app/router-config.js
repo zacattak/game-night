@@ -1,6 +1,6 @@
 // import { ExamplesController } from "./controllers/ExamplesController.js";
 import { HomeController } from "./controllers/HomeController.js";
-import { PlayersController } from "./controllers/PlayersController"
+import { PlayersController } from "./controllers/PlayersController.js"
 import { Router } from "./utils/Router.js";
 
 
