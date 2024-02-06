@@ -4,7 +4,7 @@ export class Player {
     // this.score = 0;
   }
   get PlayerCardHTMLTemplate() {
-    return `
+    return /*html*/`
     <div class="col-md-6">
     <div class="card">
       <img class="card-img-top player-img"
@@ -14,8 +14,10 @@ export class Player {
         <h2>${this.name}</h2>
         <h3>Player Score: 0</h3>
         <div>
-          <button>Score Goes Up</button>
-          <button>Score Goes Down</button>
+        <button onclick="app.PingPongPlayersController.increasePlayerScore()" type="button">
+              Up
+            </button>
+            <button type="button">Down</button>
         </div>
       </div>
     </div>
