@@ -16,7 +16,7 @@ export class PlayersController {
 
     players.forEach(player => {
       // console.log(player.PlayerCardHTMLTemplate())
-      htmlString += player.PlayerCardHTMLTemplate()
+      htmlString += player.PlayerCardHTMLTemplate
     })
 
     console.log('here is the html string', htmlString);
