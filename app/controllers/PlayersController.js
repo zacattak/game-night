@@ -1,5 +1,5 @@
 import { AppState } from "../AppState.js"
-import { playersService } from "../services/PingPongPlayersService.js";
+import { playersService } from "../services/playersServices.js";
 import { setHTML, setText } from "../utils/Writer.js";
 
 export class PlayersController {
@@ -26,8 +26,10 @@ export class PlayersController {
 
     setHTML('players', htmlString)
   }
-  increasePlayerScore() {
-    console.log('Increasing player score');
-    playersService.increasePlayerScore()
+
+  increasePlayerScore(playerName) {
+    console.log('Increasing player score', playerName);
+    playersService.increasePlayerScore(playerName)
+    this.drawPlayers()
   }
 }
